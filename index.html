@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Souqna | سوقنا</title>
+
+    <meta name="description" content="سوقنا - تسوق الملابس الرجالي والحريمي والأطفال والأدوات المنزلية بسهولة.">
+
+    <meta name="theme-color" content="#176b55">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- رأس الموقع -->
+    <header class="header">
+
+        <a href="#home" class="logo">
+            🛍️ سوقنا <span>Souqna</span>
+        </a>
+
+        <nav class="nav">
+            <a href="#home">الرئيسية</a>
+            <a href="#categories">الأقسام</a>
+            <a href="#products">المنتجات</a>
+        </nav>
+
+    </header>
+
+
+    <!-- الصفحة الرئيسية -->
+    <main id="home">
+
+        <section class="hero">
+
+            <div class="hero-content">
+
+                <p class="welcome">أهلاً بيك في سوقنا</p>
+
+                <h1>
+                    كل اللي محتاجه
+                    <br>
+                    في مكان واحد
+                </h1>
+
+                <p class="hero-text">
+                    اكتشف منتجات متنوعة من الملابس والأدوات المنزلية.
+                    اختار منتجك واطلبه بسهولة عبر واتساب.
+                </p>
+
+                <a href="#categories" class="main-button">
+                    اكتشف المنتجات
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- الأقسام -->
+        <section id="categories" class="section">
+
+            <h2>تسوق حسب القسم</h2>
+
+            <p class="section-description">
+                اختار القسم اللي بتحبه
+            </p>
+
+            <div class="categories-grid">
+
+                <button class="category-card active" data-category="all">
+                    <span>🛍️</span>
+                    <strong>كل المنتجات</strong>
+                </button>
+
+                <button class="category-card" data-category="men">
+                    <span>👔</span>
+                    <strong>ملابس رجالي</strong>
+                </button>
+
+                <button class="category-card" data-category="women">
+                    <span>👗</span>
+                    <strong>ملابس حريمي</strong>
+                </button>
+
+                <button class="category-card" data-category="kids">
+                    <span>🧸</span>
+                    <strong>ملابس أطفال</strong>
+                </button>
+
+                <button class="category-card" data-category="lingerie">
+                    <span>🎀</span>
+                    <strong>لانجري</strong>
+                </button>
+
+                <button class="category-card" data-category="home">
+                    <span>🏠</span>
+                    <strong>أدوات منزلية</strong>
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- المنتجات -->
+        <section id="products" class="section products-section">
+
+            <div class="products-heading">
+
+                <div>
+
+                    <h2>منتجاتنا</h2>
+
+                    <p class="section-description">
+                        اختار المنتج المناسب ليك واطلبه الآن
+                    </p>
+
+                </div>
+
+                <span id="product-count" class="product-count">
+                    0 موديل
+                </span>
+
+            </div>
+
+
+            <!-- لوحة رفع المنتجات -->
+            <div class="upload-panel">
+
+                <div class="upload-icon">📸</div>
+
+                <h3>أضف منتجاتك بسهولة</h3>
+
+                <p>
+                    اكتب اسم الموديل واختار القسم وارفع صور المنتجات.
+                </p>
+
+                <label for="image-upload" class="upload-button">
+                    + اختار صور المنتجات
+                </label>
+
+                <input
+                    type="file"
+                    id="image-upload"
+                    accept="image/*"
+                    multiple
+                    hidden
+                >
+
+                <p class="upload-note">
+                    تقدر تختار أكتر من صورة للموديل الواحد.
+                </p>
+
+            </div>
+
+
+            <!-- عرض المنتجات -->
+            <div id="product-grid" class="products-grid">
+
+                <div class="empty-state">
+
+                    <span>🛒</span>
+
+                    <h3>لسه مفيش منتجات</h3>
+
+                    <p>
+                        ارفع أول مجموعة صور وابدأ تنظيم منتجاتك.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- الفوتر -->
+    <footer class="footer">
+
+        <h3>Souqna | سوقنا</h3>
+
+        <p>
+            كل اللي محتاجه.. في مكان واحد ❤️
+        </p>
+
+        <p>
+            للتواصل والطلبات عبر واتساب:
+            <a href="https://wa.me/201558850098" target="_blank" rel="noopener noreferrer">
+                01558850098
+            </a>
+        </p>
+
+        <p>
+            جميع الحقوق محفوظة © Souqna
+        </p>
+
+    </footer>
+
+
+    <!-- ملفات JavaScript -->
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>
